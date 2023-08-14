@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <button type = "button" id = "learnButton" onclick = "loadLearnScreen()">How to play</button>
+    <button type = "button" id = "playButton" onclick = "loadGameScreen()">Press to play!</button>
+    <button type = "button" id = "realHitButton" onclick = "realHit()">Hit!</button>
+    <button type = "button" id = "realStandButton" onclick = "realStand()">Stand!</button>
+    <button type = "button" id = "realFoldButton" onclick = "realFold()">Fold!</button>
+    <button type = "button" id = "hitButton" onclick = "hit()">Hit!</button>
+    <button type = "button" id = "standButton" onclick = "stand()">Stand!</button>
+    <button type = "button" id = "foldButton" onclick = "fold()">Fold!</button>
+    <img src = "./Actual Bust Title.png" id = "bustTitle"></img>
+    <img src="./back.png" id = "cardimg1" style = "display:none"></img>
+    <img src="./back.png" id = "cardimg2" style = "display:none"></img>
+    <img src="./back.png" id = "cardimg3" style = "display:none"></img>
+    <img src="./back.png" id = "cardimg4" style = "display:none"></img>
+    <dialog open id = "instructionWindow">Our game starts with three shown cards, the players, and one hidden card, the dealer.<br>
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</dialog>
+    <button id = "nextButton" onclick = "nextButton()">next➤</button>
+    <script></script>
+</body>
+    <script src = "bust.js"></script>
+</html>

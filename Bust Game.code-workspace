@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Bust Game",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bust Game"
+	}
+}

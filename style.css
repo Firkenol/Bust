@@ -1,0 +1,120 @@
+#learnButton{
+    font-size: large;
+}
+#playButton{
+    font-size: large;
+}
+#howToPlayParagraph{
+    max-width: 50ch;
+    position:relative;
+    display: table-cell;
+    left:200px;
+    margin-left:100px;
+    vertical-align: middle;
+    margin-right:100px; 
+    text-align: center;
+}
+#test{
+    border-color: black;
+}
+table, th {
+    position: absolute;
+    right: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    transform: translateY(90%);
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+  #cardimg{
+    transform: rotate('270deg');
+  }
+  #instructionWindow{
+    position: absolute;
+    right: -3%;
+    top: 85%;
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #nextButton{
+    display: none;
+    position: absolute;
+    top: 91%;
+    right: 28%;
+    z-index: 7;
+  }
+  #hitButton{
+    position: absolute;
+    top: 70%;
+    right: 34.5%;
+    display: none;
+  }
+  #standButton{
+    position: absolute;
+    top: 70%;
+    right: 44.5%;
+    display: none;
+  }
+  #foldButton{
+    position: absolute;
+    top: 70%;
+    right: 55.5%;
+    display: none;
+  }
+  #realHitButton{
+    position: absolute;
+    top: 70%;
+    right: 34.5%;
+    display: none;
+    z-index: 8;
+  }
+  #realStandButton{
+    position: absolute;
+    top: 70%;
+    right: 44.5%;
+    display: none;
+    z-index: 8;
+  }
+  #realFoldButton{
+    position: absolute;
+    top: 70%;
+    right: 55.5%;
+    display: none;
+    z-index: 8;
+  }
+  #bustTitle{
+    position: absolute;
+    right: 36.5%;
+    top: -5%;
+    max-width: 25%;
+    max-height: 25%;
+}
+body{
+    background-color: aqua;
+}
+#learnButton, #playButton, #realHitButton, #realStandButton, #realFoldButton, #hitButton, #standButton, #foldButton{
+    background-color: transparent;
+    border-width: 5px;
+    border-style: groove;
+    border-color:gray;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 1.5rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+#learnButton{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}
+#playButton{
+    position: absolute;
+    right: 35%;
+    top: 50%;
+}

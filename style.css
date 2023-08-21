@@ -91,7 +91,7 @@ table, th {
     max-height: 25%;
 }
 body{
-    background-color: aqua;
+    background-color: rgb(69, 217, 89);
 }
 #learnButton, #playButton, #realHitButton, #realStandButton, #realFoldButton, #hitButton, #standButton, #foldButton{
     background-color: transparent;

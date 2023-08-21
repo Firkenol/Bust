@@ -125,6 +125,12 @@ async function printWinner(){
     else if(indexOfMaxScores.length == 4){
         document.getElementById('instructionWindow').innerHTML = "How, it looks like it's a tie between Players " + (indexOfMaxScores[0] + 1) + ", " + (indexOfMaxScores[1] + 1) + ", " + (indexOfMaxScores[2] + 1) + ", and " + (indexOfMaxScores[3] + 1) + "! Would you like to play again?";
     }
+    document.getElementById('learnButton').style.display = "inline-block";
+    document.getElementById('learnButton').style.right = "50%";
+    document.getElementById('learnButton').style.top = "65%";
+    document.getElementById('playButton').style.display = "inline-block";
+    document.getElementById('playButton').style.right = "36%";
+    document.getElementById('playButton').style.top = "65%";
 }
 }
 async function realHit(){
@@ -238,6 +244,7 @@ async function evalGame(){
                 newOpponent1Card3.style.rotate = ('90deg');
                 newOpponent1Card3.style.display = "inline-block";
                 await sleep(3000);
+                document.getElementById('cardimg4').style.boxShadow = "none";
             }
             else if(timesHitPlayer2 == 1){
                 currentCardData = drawCard();
@@ -257,6 +264,7 @@ async function evalGame(){
                 newOpponent1Card2.style.rotate = ('90deg');
                 newOpponent1Card2.style.display = "inline-block";
                 await sleep(3000);
+                document.getElementById('cardimg4').style.boxShadow = "none";
             }
             else if(timesHitPlayer2 == 0){
                 currentCardData = drawCard();
@@ -276,6 +284,7 @@ async function evalGame(){
                 newOpponent1Card1.style.rotate = ('90deg');
                 newOpponent1Card1.style.display = "inline-block";
                 await sleep(1000);
+                document.getElementById('cardimg4').style.boxShadow = "none";
             }
             cardsNumsOnTable[1] += 1;
             if(playerScores[1] > 28){
@@ -299,6 +308,7 @@ async function evalGame(){
                 await sleep(1000);
                 document.getElementById('instructionWindow').innerHTML = "Player 2 stands!";
                 await sleep(1000);
+                document.getElementById('cardimg4').style.boxShadow = "none";
                 evalGameForPlayerThree();
                 }
             else if(option == "fold"){
@@ -309,6 +319,7 @@ async function evalGame(){
                 cardsNumsOnTable[1] = 5;
                 cardStillInGame[1] = false;
                 await sleep(1000);
+                document.getElementById('cardimg4').style.boxShadow = "none";
                 evalGameForPlayerThree();
                 }
                 else{
@@ -950,6 +961,12 @@ if(walkThroughStage > 0){
             await sleep(2000);
             document.getElementById('cardimg1').style.boxShadow = "none";
             document.getElementById('instructionWindow').innerHTML = "Now that you know the rules, do you want to play a real game?";
+            document.getElementById('learnButton').style.display = "inline-block";
+            document.getElementById('learnButton').style.right = "50%";
+            document.getElementById('learnButton').style.top = "65%";
+            document.getElementById('playButton').style.display = "inline-block";
+            document.getElementById('playButton').style.right = "36%";
+            document.getElementById('playButton').style.top = "65%";
         }
     }
         else{
@@ -1053,7 +1070,12 @@ if(walkThroughStage > 0){
         document.getElementById('instructionWindow').innerHTML = "Player 2 wins!";  
         await sleep(2000);
         document.getElementById('instructionWindow').innerHTML = "Now that you know the rules, do you want to play a real game?";
-
+        document.getElementById('learnButton').style.display = "inline-block";
+        document.getElementById('learnButton').style.right = "50%";
+        document.getElementById('learnButton').style.top = "65%";
+        document.getElementById('playButton').style.display = "inline-block";
+        document.getElementById('playButton').style.right = "36%";
+        document.getElementById('playButton').style.top = "65%";
     }
     else if(cardsOnTable.includes("Player1Card2")){
         document.getElementById('hitButton').style.display = "none";
@@ -1100,6 +1122,12 @@ if(walkThroughStage > 0){
             document.getElementById('instructionWindow').innerHTML = "Player 2 wins!";  
             await sleep(2000);
             document.getElementById('instructionWindow').innerHTML = "Now that you know the rules, do you want to play a real game?";
+            document.getElementById('learnButton').style.display = "inline-block";
+            document.getElementById('learnButton').style.right = "50%";
+            document.getElementById('learnButton').style.top = "65%";
+            document.getElementById('playButton').style.display = "inline-block";
+            document.getElementById('playButton').style.right = "36%";
+            document.getElementById('playButton').style.top = "65%";
         }
     }
     else{
@@ -1165,6 +1193,12 @@ if(walkThroughStage > 0){
         document.getElementById('instructionWindow').innerHTML = "Player 2 wins!";  
         await sleep(2000);
         document.getElementById('instructionWindow').innerHTML = "Now that you know the rules, do you want to play a real game?";
+        document.getElementById('learnButton').style.display = "inline-block";
+        document.getElementById('learnButton').style.right = "50%";
+        document.getElementById('learnButton').style.top = "65%";
+        document.getElementById('playButton').style.display = "inline-block";
+        document.getElementById('playButton').style.right = "36%";
+        document.getElementById('playButton').style.top = "65%";
         }
         else if(roundNum == 2){
             document.getElementById('hitButton').style.display = "none";
@@ -1201,7 +1235,12 @@ if(walkThroughStage > 0){
             document.getElementById('instructionWindow').innerHTML = "Player 2 wins!";  
             await sleep(2000);
             document.getElementById('instructionWindow').innerHTML = "Now that you know the rules, do you want to play a real game?";
-
+            document.getElementById('learnButton').style.display = "inline-block";
+            document.getElementById('learnButton').style.right = "50%";
+            document.getElementById('learnButton').style.top = "65%";
+            document.getElementById('playButton').style.display = "inline-block";
+            document.getElementById('playButton').style.right = "36%";
+            document.getElementById('playButton').style.top = "65%";
         }
         else{
             newOpponent1Card1.src = "./ace_of_clubs.svg";
@@ -1211,6 +1250,12 @@ if(walkThroughStage > 0){
             document.getElementById('instructionWindow').innerHTML = "Player 3 wins!";  
             await sleep(2000);
             document.getElementById('instructionWindow').innerHTML = "Now that you know the rules, do you want to play a real game?";
+            document.getElementById('learnButton').style.display = "inline-block";
+            document.getElementById('learnButton').style.right = "50%";
+            document.getElementById('learnButton').style.top = "65%";
+            document.getElementById('playButton').style.display = "inline-block";
+            document.getElementById('playButton').style.right = "36%";
+            document.getElementById('playButton').style.top = "65%";
         }
     }
 }
